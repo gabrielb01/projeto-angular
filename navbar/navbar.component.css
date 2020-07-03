@@ -1,0 +1,39 @@
+
+
+.navbar {
+    position: fixed;
+    top:0;
+    width: calc(100vw - 160px);
+    background-color: rgb(44, 98, 185);
+    font-size: 18px;
+    padding: 0px 80px;
+}
+
+.navbar .navbar-brand {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 20px;
+}
+
+
+.navbar .list {
+    float: right;
+}
+
+.navbar .list-item {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar .list-item a  { 
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.active {
+    font-weight: bold;
+}
+

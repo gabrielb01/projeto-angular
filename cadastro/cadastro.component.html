@@ -1,0 +1,18 @@
+<div class="container-form">
+    <form [formGroup] = "formCadastro" (ngSubmit)="cadastrar()">
+        <h3>Login Dev Forum</h3><hr>
+        <div class="container-box">
+            <label for="nomeCompleto">Nome Completo:</label>
+            <input type="text" id="nomeCompleto" placeholder="Nome Completo" formControlName="nomeCompleto" minlength="6" required>
+        </div>
+        <div class="container-box">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="E-mail" formControlName="email" minlength="5" required> 
+        </div>
+        <div class="container-box">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" placeholder="Senha" formControlName="senha" minlength="8" required>
+        </div>
+        <button type="submit" [disabled]="!formCadastro.valid">Cadastrar</button>
+    </form>
+</div>
